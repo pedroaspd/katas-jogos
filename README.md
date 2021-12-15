@@ -14,3 +14,4 @@ https://www.rizzonicola.com/express-tdd/
 
 https://www.linkedin.com/pulse/how-you-can-do-tdd-your-expressjs-server-jest-nicoandres-rodriguez
 
+https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9

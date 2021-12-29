@@ -1,4 +1,5 @@
 import express from 'express';
+import router from './routes/games.routes'
 
 export default class Server
 {
@@ -6,6 +7,7 @@ export default class Server
 
     constructor(){
         this.app = express();
+        this.app.use('/', router);
     }
 
     listen(){

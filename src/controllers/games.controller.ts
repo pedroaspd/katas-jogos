@@ -1,4 +1,5 @@
 import {Request, Response} from 'express'
+import DatabaseRepository from '../infrastructure/repository/database.repository'
 
 class GamesController {
 
@@ -6,12 +7,13 @@ class GamesController {
 
   }
 
-  //confirmar o uso do static
-  static async getGameById(req: Request, res: Response){
+  async getGameById(req: Request, res: Response){
     let id: string = req.params.id;
     let game = null;
+    DatabaseRepository.getAllGames();
 
-    return res.status(200).json(game);
+    return;
+    //return res.status(200).json(game);
   };
 
 }
